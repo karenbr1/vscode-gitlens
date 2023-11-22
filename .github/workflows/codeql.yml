@@ -27,10 +27,10 @@ jobs:
         permissions:
             actions: read
             contents: read
-            security-events: write
+            security-events: read
 
         strategy:
-            fail-fast: false
+            fail-fast: fail
             matrix:
                 language: ['javascript']
                 # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
